@@ -1,0 +1,94 @@
+.header {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo_size {
+  width: 164px;
+  height: 53px;
+}
+
+.header_size {
+  width: 1517px;
+  height: 53px;
+}
+
+.logo__text_position {
+  margin-top: 8px;
+}
+
+.logo__img_size {
+  width: 55px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu_size {
+  width: 501px;
+  height: 31px;
+}
+
+.header__menu_position {
+  margin-top: 15px;
+}
+
+.current-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu__link_decoration,
+.current__link_decoration {
+  text-decoration: none;
+}
+
+.menu__link:hover,
+.current__link:hover {
+  color: bisque;
+}
+
+.basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__basket_size {
+  width: 130px;
+  height: 51px;
+}
+
+.basket__img_size {
+  width: 55px;
+  height: 50px;
+}
+
+.basket__text_position {
+  margin-top: 5px;
+}
+
+/* popup counter */
+
+.popup-counter {
+  position: absolute;
+  top: 24px;
+  right: 265px;
+  background-color: white;
+  color: black;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 25px;
+}

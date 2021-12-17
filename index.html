@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apple Shop</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/cart.css" type="text/css" />
+    <link rel="stylesheet" href="css/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/adaptive.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header header_size">
+      <div class="logo header__logo header__logo_size">
+        <img
+          class="logo__img logo__img_size"
+          src="https://svgshare.com/i/b1J.svg"
+          alt="Logo image"
+        />
+        <p class="logo__text logo__text_position">Яблочный магазин</p>
+      </div>
+      <nav class="menu header__menu header__menu_size header__menu_position">
+        <a class="menu__link menu__link_decoration" href="#">Главная</a>
+        <div class="current-link">
+          <a class="current__link current__link_decoration" href="#">Товары</a>
+          <hr />
+        </div>
+        <a class="menu__link menu__link_decoration" href="#">Заказать</a>
+        <a class="menu__link menu__link_decoration" href="#">Офферта</a>
+        <a class="menu__link menu__link_decoration" href="#">О нас</a>
+      </nav>
+      <div class="basket header__basket header__basket_size">
+        <a class="basket__link" href="#"
+          ><img
+            class="basket__img basket__img_size"
+            src="https://svgshare.com/i/b1e.svg"
+            onclick="shoppingCartOpen();"
+            alt="Basket Icon"
+        /></a>
+        <p class="basket__text basket__text_position">0.0 $</p>
+      </div>
+    </header>
+    <main id="main__shop" class="main">
+      <hr class="main__hr" />
+      <h1 class="main__title">Магазин техники Apple</h1>
+      <div class="subtitle main__subtitle">
+        <hr class="subtitle__line" />
+        <h2 class="subtitle__text">IPHONES</h2>
+        <hr class="subtitle__line" />
+      </div>
+      <div class="list main__list main__list_size">
+        <template id="product-template">
+          <div class="product list__product">
+            <img class="product-img" src="" alt=""></img>
+            <div class="product-description">
+              <p class="product-description__title"></p>
+              <p class="product-description__subtitle"></p>
+            </div>
+            <div class="product-buying product__product-buying">
+              <button type="submit" class="product-buying__button">
+                Купить
+              </button>
+              <p class="product-buying__text"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="subtitle main__subtitle">
+        <hr class="subtitle__line" />
+        <h2 class="subtitle__text">IPADS</h2>
+        <hr class="subtitle__line" />
+      </div>
+      <div class="list main__list main__list_size"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__company-data">
+        <div class="adress company-data__adress">
+          <p class="adress__text">г. Тольятти, ул. Колотушкина</p>
+        </div>
+        <div class="copyright company-data__copyright">© Яблочный магазин</div>
+        <div class="phone-number company-data__phone-number">+79000000000</div>
+      </div>
+    </footer>
+    <template id="cart-product">
+      <div class="cart-product">
+        <p class="cart-product__name"></p>
+        <p class="cart-product__count"></p>
+        <p class="cart-product__price"></p>
+      </div>
+    </template>
+    <script src="js/product.js" defer></script>
+    <script src="js/card.js" defer></script>
+    <script src="js/basket.js" defer></script>
+  </body>
+</html>

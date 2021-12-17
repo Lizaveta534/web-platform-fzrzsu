@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  height: 81px;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__company-data {
+  width: 1363px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__company-data {
+  display: flex;
+  justify-content: space-between;
+}
